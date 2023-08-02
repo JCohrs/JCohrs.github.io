@@ -6,6 +6,7 @@ html {
 }
 body {
     font-family: 'Open Sans', sans-serif;
+    background-color: black;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Kavivanar', cursive;
@@ -13,11 +14,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 h2 {
     font-size: 2rem;
-    color: #A51F10;
+    color: #7630D9;
     margin: 0;
 }
+p{
+    color: white;
+}
 a {
-    color: #DA0090;
+    color: #79F2E6;
     text-decoration: none;
 }
 a:hover {
@@ -53,7 +57,7 @@ header{
 
 .rightheader h1 {
     margin: 0;
-    color: #DA0090;
+    color: #04588C;
     font-size: 3rem;
 }
 
@@ -62,8 +66,8 @@ header{
 }
 
 nav {
-    border-top: 3px solid #DA0090;
-    border-bottom: 3px solid #a61f11;
+    border-top: 3px solid #532473;
+    border-bottom: 3px solid #532473;
 }
 
 nav ul {
@@ -79,19 +83,19 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: #73352e;
+    color: #79F2E6;
     display: block;
     padding: .5rem 1rem;
 }
 
 nav a:hover {
-    background-color: black;
-    color: white;
+    background-color: #04588C;
+    color: #F06BF2;
     text-decoration: none;
 }
 
 section {
-    border-bottom: 1px solid #DA0090;
+    border-bottom: 1px solid #532473;
 }
 
 article {
@@ -113,7 +117,7 @@ article:after {
 footer {
     text-align: center;
     font-size: 0.8rem;
-    border-top: 1px solid #a61f11;
+    border-top: 1px solid #532473;
     margin-top: .5rem;
 }
 
