@@ -4,45 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeff Cohrs</title>
-    <link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/components/header.css">
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/components/hero.css">
+	<link rel="stylesheet" href="css/components/about.css">
+	<link rel="stylesheet" href="css/utils.css">
 </head>
 
 <body>
-	<div class="wrapper">
-		<header>
-			<div class="leftheader">
-				<a href="/"><img src="img/logo.png" alt="Zorgblag's Blog. Click for home. "></a>
-			</div>
-			<div class="rightheader">
-				<h1>Jeffrey Cohrs</h1>
-				<p>My Personal Portfolio Website</p>
-			</div>
-		</header>
+	<header class="header container">
 		<nav>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="projects.html">Projects</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="https://jeffinjapan.blog" target="_blank">Blog</a></li>
-				<li><a href="contact.html">Contact</a></li>
+			<ul class="header__menu">
+				<li>
+					<a class="header__link" href="#about">About</a>
+				</li>
+				<li>
+					<a class="header__link" href="#featured">Projects</a>
+				</li>
+				<li>
+					<a class="header__link" href="#contact">Contact</a>
+				</li>
+				<li class="header__line"></li>
+				<li>
+					<button class="header__toggle">
+						<!-- moon -->
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+							<path fill-rule="evenodd" d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z" clip-rule="evenodd" />
+						</svg>
+						<!-- sun -->					
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" style="display: none;"> 
+							<path d="M12 3V4M12 20V21M4 12H3M6.31412 6.31412L5.5 5.5M17.6859 6.31412L18.5 5.5M6.31412 17.69L5.5 18.5001M17.6859 17.69L18.5 18.5001M21 12H20M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+					</button>
+				</li>
+				<li>
+					<a class="header__resume btn" href="#">Resume</a>
+				</li>
 			</ul>
+
+			<button class="header__hamburger" title="hamburger-menu">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+					<path fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
+				</svg>				  
+			</button>
 		</nav>
-		<section>
-			<article>
-				<img src="img/blog1.png" alt="Personal Headshot">
-				<h2>About Me</h2>
-				<p>I am a graduate from MSU in New Jersey with a B.S. in Information Technology. However, I focused more on computer science and programming during my degree. I have experience working with Python, SQL, HTML, CSS, and JavaScript. My personal hobbies are snowboarding and hiking around the northern alps in Japan near where I currently live.</p>
-			</article>
+	</header>
+	<main>
+		<section class="hero container">
+			<img class="hero__img" src="img/hero_img.jpg" alt="hero picture">
+			<h2 class="hero__subtitle">Hi, I'm Jeff<br>
+				はじめまして、ジェフです</h2>
+			<h1 class="hero__title">
+				Web developer<br>
+				Software Engineer
+			</h1>
+			<p class="hero__description">personal blurb</p>
+			<a class="hero__btn btn" href="#">Reach out</a>
 		</section>
-		<footer>
-			<p>Legal disclaimer, copyright, etc.</p>
-			<ul>
-				<li><a href="#"><img src="img/icon1.png" alt="GitHub"></a></li>
-				<li><a href="#"><img src="img/icon2.png" alt="Twitter"></a></li>
-				<li><a href="#"><img src="img/icon3.png" alt="YouTube"></a></li>
-				<li><a href="#"><img src="img/icon4.png" alt="Instagram"></a></li>
-			</ul>
-		</footer>
-	</div>
+		<section class="about container section">
+			<div class="about__content">
+				<h2 class="about__title">About</h2>
+				<p class="about__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec ligula nibh. Suspendisse potenti. Vivamus condimentum pellentesque tellus in lacinia. Nam convallis nisl gravida urna aliquet viverra.</p>
+				<p class="about__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec ligula nibh. Suspendisse potenti. Vivamus condimentum pellentesque tellus in lacinia.</p>
+				<p class="about__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec ligula nibh.</p>
+				<hr class="about__hr">
+				<h3 class="about__subtitle">Technologies</h3>
+				<div class="about__skill__list-container">
+					<ul class="about__skill__list">
+						<li class="about_skill">HTML</li>
+						<li class="about_skill">CSS</li>
+						<li class="about_skill">third item</li>
+					</ul>
+
+					<ul class="about__skill__list">
+						<li class="about_skill">JS</li>
+						<li class="about_skill">ReactJS</li>
+						<li class="about_skill">Python</li>
+					</ul>
+				</div>
+			</div>
+			<div class="about__img-wrapper">
+				<img class="about__img" src="img/profile_img.jpg" alt="profile picture">
+			</div>
+		</section>
+		<!-- <section></section>
+		<section></section>
+		<section></section> -->
+	</main>
+	<footer></footer>
 </body>
 </html>
