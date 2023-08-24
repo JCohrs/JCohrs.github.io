@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="css/components/work.css">
 	<link rel="stylesheet" href="css/components/contact.css">
 	<link rel="stylesheet" href="css/components/footer.css">
+	<link rel="stylesheet" href="css/components/mobile-nav.css">
 	<link rel="stylesheet" href="css/utils.css">
 </head>
 
@@ -54,6 +55,35 @@
 			</button>
 		</nav>
 	</header>
+	<!-- Mobile Navigation -->
+	<div class="mobile-nav">
+		<nav>
+			<ul class="mobile-nav__menu">
+				<li>
+					<a href="#about" class="mobile-nav__link">About</a>
+				</li>
+				<li>
+					<a href="#featured" class="mobile-nav__link">Projects</a>
+				</li>
+				<li>
+					<a href="#contact" class="mobile-nav__link">Contact</a>
+				</li>
+				<li class="mobile-nav__link-line"></li>
+				<li>
+					<button class="mobile-nav__toggle">
+					<!-- moon -->
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+						<path fill-rule="evenodd" d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z" clip-rule="evenodd" />
+					</svg>
+					</button>
+				</li>
+				<li>
+					<a href="" class="mobile-nav__btn btn">Resume</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	<!-- End of Mobile Navigation -->
 	<main>
 		<section class="hero container">
 			<img class="hero__img" src="img/hero_img.jpg" alt="hero picture">
@@ -66,7 +96,7 @@
 			<p class="hero__description">personal blurb</p>
 			<a class="hero__btn btn" href="#">Reach out</a>
 		</section>
-		<section class="about container section">
+		<section id="about" class="about container section">
 			<div class="about__content">
 				<h2 class="about__title">About</h2>
 				<p class="about__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec ligula nibh. Suspendisse potenti. Vivamus condimentum pellentesque tellus in lacinia. Nam convallis nisl gravida urna aliquet viverra.</p>
@@ -92,7 +122,7 @@
 				<img class="about__img" src="img/profile_img.jpg" alt="profile picture">
 			</div>
 		</section>
-		<section class="featured container section">
+		<section id="featured" class="featured container section">
 			<h3 class="featured__subtitle">Feature project</h3>
 			<div class="featured__wrapper">
 				<h2 class="featured__title">title with link to project</h2>
@@ -177,7 +207,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="contact container section">
+		<section id="contact" class="contact container section">
 			<h2 class="contact__title">Get In Contact</h2>
 			<p class="contact__description">My inbox is open to everyone, so feel free to reach out about any inquiries. I will get back to you as soon as possible.</p>
 			<a href="mailto:jeffscohrs@gmail.com" target="_blank" class="contact__btn btn">Reach out</a>

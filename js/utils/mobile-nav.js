@@ -1,0 +1,1 @@
+const headerHam = document.querySelector('.header__hamburger');
