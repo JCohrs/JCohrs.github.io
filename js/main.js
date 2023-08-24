@@ -27,7 +27,65 @@ const mobileNav = () => {
 };
 
 // dark mode toggle
-const themeToggleBtns = document.querySelectorAll('#theme-toggle');
+const darkMode = () => {
+    const themeToggleBtns = document.querySelectorAll('#theme-toggle');
+    const toggleSun = document.querySelectorAll('#toggle-sun');
+    const toggleMoon = document.querySelectorAll('#toggle-moon');
+    const theme = localStorage.getItem('theme');
 
+    // On mount
+    theme && document.body.classList.add(theme);
+    theme && toggleMoon.forEach(element => element.style.display = 'block');
+    theme && toggleSun.forEach(element => element.style.display = 'none');
+
+    // Handler
+    const handleThemeToggle = () => {
+        document.body.classList.toggle('light-mode');
+            // remember light mode
+            if (document.body.classList.contains('light-mode')) {
+                localStorage.setItem('theme', 'light-mode');
+                // turn dark mode on , sun on
+                toggleSun.forEach(element => {
+                    element.style.display = 'none';
+                });
+                toggleMoon.forEach(element => {
+                    element.style.display = 'block';
+                });
+            } else {
+                localStorage.removeItem('theme');
+                // turn light mode on, moon on
+                toggleSun.forEach(element => {
+                    element.style.display = 'block';
+                });
+                toggleMoon.forEach(element => {
+                    element.style.display = 'none';
+                });
+            }
+            // change dark/ligth mode toggle icon
+            // if (isSun) {
+            //     // turn light mode on, moon on
+            //     isSun = false;
+            //     toggleSun.forEach(element => {
+            //         element.style.display = 'none';
+            //     });
+            //     toggleMoon.forEach(element => {
+            //         element.style.display = 'block';
+            //     });
+            // } else {
+            //     // turn dark mode on , sun on
+            //     isSun = true;
+            //     toggleSun.forEach(element => {
+            //         element.style.display = 'block';
+            //     });
+            //     toggleMoon.forEach(element => {
+            //         element.style.display = 'none';
+            //     });
+            // }
+       }
+    
+    // Event
+    themeToggleBtns.forEach(btn => btn.addEventListener('click', handleThemeToggle));
+};
 
 mobileNav();
+darkMode();
