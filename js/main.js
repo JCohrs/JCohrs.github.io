@@ -53,6 +53,7 @@ const darkMode = () => {
                 });
             } else {
                 localStorage.removeItem('theme');
+                document.body.removeAttribute('class');
                 // turn light mode on, moon on
                 toggleSun.forEach(element => {
                     element.style.display = 'block';
