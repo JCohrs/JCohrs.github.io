@@ -62,26 +62,6 @@ const darkMode = () => {
                     element.style.display = 'none';
                 });
             }
-            // change dark/ligth mode toggle icon
-            // if (isSun) {
-            //     // turn light mode on, moon on
-            //     isSun = false;
-            //     toggleSun.forEach(element => {
-            //         element.style.display = 'none';
-            //     });
-            //     toggleMoon.forEach(element => {
-            //         element.style.display = 'block';
-            //     });
-            // } else {
-            //     // turn dark mode on , sun on
-            //     isSun = true;
-            //     toggleSun.forEach(element => {
-            //         element.style.display = 'block';
-            //     });
-            //     toggleMoon.forEach(element => {
-            //         element.style.display = 'none';
-            //     });
-            // }
        }
     
     // Event
