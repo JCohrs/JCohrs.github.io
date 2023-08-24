@@ -22,12 +22,12 @@
 }
 
 .about__hr {
-    border-color: var(--clr-pink);
+    border-color: var(--clr-red);
 }
 
 .about__subtitle {
     font-size: var(--size-sm);
-    color: var(--clr-text);
+    color: var(--clr-blue);
 }
 
 .about__skill__list-container {

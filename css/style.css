@@ -1,6 +1,5 @@
 :root {
     --clr-background: black;
-    --clr-pink: #d5a18e;
     --clr-red: #b9314f;
     --clr-grey: #3a4f41;
     --clr-blue: #35a7ff;
@@ -34,12 +33,10 @@ html {
 }
 
 .light-mode {
-    --clr-background: #F1F0E8;
-    --clr-pink: #FFCFEA;
-    --clr-yellow: #FEFFBE;
-    --clr-green: #CBFFE6;
-    --clr-blue: #AFE9FF;
-    --clr-purp: #BFB9FF;
+    --clr-background: #e7eb90;
+    --clr-red: #b9314f;
+    --clr-grey: #3a4f41;
+    --clr-blue: #35a7ff;
     --clr-text: black;
 }
 

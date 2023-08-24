@@ -31,6 +31,7 @@
 
 .featured__label {
     font-size: var(--size-base);
+    color: var(--clr-blue);
     text-transform: capitalize;
     margin-bottom: 0.25rem;
 }
@@ -53,7 +54,7 @@
 
 .featured__info {
     font-size: var(--size-sm);
-    color: var(--clr-pink);
+    color: var(--clr-text);
     text-transform: capitalize;
 }
 

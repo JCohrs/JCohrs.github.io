@@ -49,8 +49,8 @@
     }
     
     .header__line {
-        border: 1px solid var(--clr-grey);
-        padding-top: 1.5em;
+        border: 1px solid var(--clr-red);
+        padding-top: 2em;
     }
     
     .header__toggle {
