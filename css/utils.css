@@ -21,8 +21,8 @@
     font-weight: 600;
     text-decoration: none;
     letter-spacing: -0.05rem;
-    background-color: var(--clr-pink);
-    color: var(--clr-yellow);
+    background-color: var(--clr-red);
+    color: var(--clr-text);
     padding: 0.5rem 1rem;
     border-radius: 6px;
 }

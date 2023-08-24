@@ -1,11 +1,10 @@
 :root {
-    --clr-background: #F1F0E8;
-    --clr-pink: #FFCFEA;
-    --clr-yellow: #FEFFBE;
-    --clr-green: #CBFFE6;
-    --clr-blue: #AFE9FF;
-    --clr-purp: #BFB9FF;
-    --clr-text: black;
+    --clr-background: black;
+    --clr-pink: #d5a18e;
+    --clr-red: #b9314f;
+    --clr-grey: #3a4f41;
+    --clr-blue: #35a7ff;
+    --clr-text: #e7eb90;
 
     /* Tailwind sizes */
     --size-xxs: 0.5rem;
@@ -34,8 +33,19 @@ html {
     scroll-behavior: smooth;
 }
 
+.light-mode {
+    --clr-background: #F1F0E8;
+    --clr-pink: #FFCFEA;
+    --clr-yellow: #FEFFBE;
+    --clr-green: #CBFFE6;
+    --clr-blue: #AFE9FF;
+    --clr-purp: #BFB9FF;
+    --clr-text: black;
+}
+
 body {
     background-color: var(--clr-background);
+    color: var(--clr-text);
 }
 
 img,

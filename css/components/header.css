@@ -13,7 +13,7 @@
 }
 
 .header__hamburger {
-    color: red;
+    color: var(--clr-pink);
     width: var(--size-2xl);
     height: var(--size-2xl);
     display: block;
@@ -49,13 +49,13 @@
     }
     
     .header__line {
-        border: 1px solid orange;
+        border: 1px solid var(--clr-grey);
         padding-top: 1.5em;
     }
     
     .header__toggle {
         display: block;
-        /* color: ; */
+        color: white; 
         width: var(--size-base);
         height: var(--size-base);
     }

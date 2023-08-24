@@ -15,13 +15,13 @@
 }
 
 .hero__subtitle {
-    color: black;
+    color: var(--clr-text);
     font-size: var(--size-base);
     line-height: 1;
 }
 
 .hero__title {
-    color: black;
+    color: var(--clr-text);
     text-transform: uppercase;
     font-size: var(--size-4xl);
     letter-spacing: -0.05rem;

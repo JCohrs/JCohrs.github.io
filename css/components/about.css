@@ -12,22 +12,22 @@
 
 .about__title {
     font-size: var(--size-2xl);
-    color: black;
+    color: var(--clr-blue);
 }
 
 .about__description {
     max-width: 60ch;
     font-size: var(--size-sm);
-    color: grey;
+    color: var(--clr-text);
 }
 
 .about__hr {
-    border-color: red;
+    border-color: var(--clr-pink);
 }
 
 .about__subtitle {
     font-size: var(--size-sm);
-    color: black;
+    color: var(--clr-text);
 }
 
 .about__skill__list-container {
@@ -45,7 +45,7 @@
 
 .about__skill {
     font-size: var(--size-sm);
-    color: orange;
+    color: var(--clr-text);
 }
 
 .about__skill::before {

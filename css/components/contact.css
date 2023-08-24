@@ -9,13 +9,13 @@
 
 .contact__title {
     font-size: var(--size-2xl);
-    color: black;
+    color: var(--clr-blue);
     text-transform: capitalize;
 }
 
 .contact__description {
     font-size: var(--size-sm);
-    color: black;
+    color: var(--clr-text);
     max-width: 60ch;
 }
 

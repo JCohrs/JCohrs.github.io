@@ -26,4 +26,8 @@ const mobileNav = () => {
     });
 };
 
+// dark mode toggle
+const themeToggleBtns = document.querySelectorAll('#theme-toggle');
+
+
 mobileNav();
