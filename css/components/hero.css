@@ -21,7 +21,7 @@
 }
 
 .hero__title {
-    color: var(--clr-text);
+    color: var(--clr-header);
     text-transform: uppercase;
     font-size: var(--size-4xl);
     letter-spacing: -0.05rem;
@@ -31,13 +31,13 @@
 .hero__description {
     max-width: 60ch;
     font-size: var(--size-sm);
-    color: red;
+    color: var(--clr-text);
 }
 
-.hero__btn {
+/* .hero__btn {
     text-transform: capitalize;
     font-size: var(--size-sm);
-}
+} */
 
 /* xs */
 @media (min-width: 475px) {
@@ -60,6 +60,16 @@
     
     .hero__description {
         font-size: var(--size-base);
+    }
+
+    .hero__description::before {
+        content: '🇯🇵';
+        margin-right: 0.5rem;
+    }
+
+    .hero__description::after {
+        content: '🇯🇵';
+        margin-left: 0.5rem;
     }
     
     .hero__btn {
@@ -91,6 +101,15 @@
     .hero__description {
         font-size: var(--size-lg);
     }
+
+    
+    .hero__description::before {
+        content: '';
+    }
+
+    .hero__description::after {
+        content: '';
+    }
     
     .hero__btn {
         font-size: var(--size-lg);
@@ -100,7 +119,13 @@
 /* xl */
 @media (min-width: 1280px) {
     .hero {
-        gap: 2rem;
+        margin-top: 6rem;
+    }
+
+    .hero::after {
+        content: '';
+        display: block;
+        margin-bottom: 5rem;
     }
 
     .hero__img {
@@ -118,6 +143,14 @@
     
     .hero__description {
         font-size: var(--size-xl);
+    }
+
+    .hero__description::before {
+        content: '';
+    }
+
+    .hero__description::after {
+        content: '';
     }
     
     .hero__btn {

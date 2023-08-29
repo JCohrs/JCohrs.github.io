@@ -12,7 +12,7 @@
 
 .about__title {
     font-size: var(--size-2xl);
-    color: var(--clr-blue);
+    color: var(--clr-header);
 }
 
 .about__description {
@@ -27,7 +27,7 @@
 
 .about__subtitle {
     font-size: var(--size-sm);
-    color: var(--clr-blue);
+    color: var(--clr-header);
 }
 
 .about__skill__list-container {
@@ -120,7 +120,7 @@
     }
 
     .about__img {
-        width: 550px;
+        width: 40rem;
     }
 }
 
@@ -147,13 +147,13 @@
     }
 
     .about__img {
-        width: 620px;
+        width: 45rem;
     }
 }
 
 /* 2xl */
 @media (min-width: 1536px) {
     .about__img {
-        width: 670px;
+        width: 50rem;
     }
 }

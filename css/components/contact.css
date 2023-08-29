@@ -9,7 +9,7 @@
 
 .contact__title {
     font-size: var(--size-2xl);
-    color: var(--clr-blue);
+    color: var(--clr-header);
     text-transform: capitalize;
 }
 

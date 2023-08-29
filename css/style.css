@@ -1,9 +1,9 @@
 :root {
     --clr-background: black;
     --clr-red: #b9314f;
-    --clr-grey: #3a4f41;
-    --clr-blue: #35a7ff;
-    --clr-text: #e7eb90;
+    --clr-cover: #12355B;
+    --clr-header: #35a7ff;
+    --clr-text: #F5FBEF;
 
     /* Tailwind sizes */
     --size-xxs: 0.5rem;
@@ -33,10 +33,10 @@ html {
 }
 
 .light-mode {
-    --clr-background: #e7eb90;
+    --clr-background: #F5FBEF;
     --clr-red: #b9314f;
-    --clr-grey: #3a4f41;
-    --clr-blue: #35a7ff;
+    --clr-cover: #12355B;
+    --clr-header: #35a7ff;
     --clr-text: black;
 }
 
@@ -65,10 +65,10 @@ button {
 }
 
 strong {
-    color: var(--clr-blue);
+    color: var(--clr-header);
 }
 
 a {
-    color: var(--clr-blue);
+    color: var(--clr-header);
     text-decoration: none;
 }
