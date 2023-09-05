@@ -16,6 +16,7 @@
 
 .work__project-title {
     font-size: var(--size-base);
+    color: var(--clr-header);
     margin-bottom: 1rem;
 }
 
@@ -161,7 +162,7 @@
 
     .work__project-subtitle {
         display: block;
-        font-size: var(--size-base);
+        font-size: var(--size-xl);
     }
 }
 
@@ -180,7 +181,7 @@
     }
 
     .work__project-subtitle {
-        font-size: var(--size-lg);
+        font-size: var(--size-2xl);
     }
 }
 
@@ -207,7 +208,7 @@
     }
 
     .work__project-subtitle {
-        font-size: var(--size-xl);
+        font-size: var(--size-3xl);
     }
 }
 
@@ -235,7 +236,7 @@
     }
 
     .work__project-subtitle {
-        font-size: var(--size-2xl);
+        font-size: var(--size-4xl);
     }
 
     .work__container {
