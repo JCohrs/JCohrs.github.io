@@ -61,16 +61,6 @@
     .hero__description {
         font-size: var(--size-base);
     }
-
-    .hero__description::before {
-        content: '🇯🇵';
-        margin-right: 0.5rem;
-    }
-
-    .hero__description::after {
-        content: '🇯🇵';
-        margin-left: 0.5rem;
-    }
     
     .hero__btn {
         font-size: var(--size-base);
@@ -100,15 +90,6 @@
     
     .hero__description {
         font-size: var(--size-lg);
-    }
-
-    
-    .hero__description::before {
-        content: '';
-    }
-
-    .hero__description::after {
-        content: '';
     }
     
     .hero__btn {
@@ -143,14 +124,6 @@
     
     .hero__description {
         font-size: var(--size-xl);
-    }
-
-    .hero__description::before {
-        content: '';
-    }
-
-    .hero__description::after {
-        content: '';
     }
     
     .hero__btn {
