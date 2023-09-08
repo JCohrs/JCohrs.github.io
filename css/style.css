@@ -1,9 +1,9 @@
 :root {
-    --clr-background: black;
+    --clr-background: #F5FBEF;
     --clr-red: #b9314f;
     --clr-cover: #12355B;
     --clr-header: #35a7ff;
-    --clr-text: #F5FBEF;
+    --clr-text: black;
 
     /* Tailwind sizes */
     --size-xxs: 0.5rem;
@@ -32,12 +32,12 @@ html {
     scroll-behavior: smooth;
 }
 
-.light-mode {
-    --clr-background: #F5FBEF;
+.dark-mode {
+    --clr-background: black;
     --clr-red: #b9314f;
     --clr-cover: #12355B;
     --clr-header: #35a7ff;
-    --clr-text: black;
+    --clr-text: #F5FBEF;
 }
 
 body {

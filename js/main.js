@@ -40,26 +40,26 @@ const darkMode = () => {
 
     // Handler
     const handleThemeToggle = () => {
-        document.body.classList.toggle('light-mode');
-            // remember light mode
-            if (document.body.classList.contains('light-mode')) {
-                localStorage.setItem('theme', 'light-mode');
+        document.body.classList.toggle('dark-mode');
+            // remember dark mode
+            if (document.body.classList.contains('dark-mode')) {
+                localStorage.setItem('theme', 'dark-mode');
                 // turn dark mode on , sun on
                 toggleSun.forEach(element => {
-                    element.style.display = 'none';
+                    element.style.display = 'block';
                 });
                 toggleMoon.forEach(element => {
-                    element.style.display = 'block';
+                    element.style.display = 'none';
                 });
             } else {
                 localStorage.removeItem('theme');
                 document.body.removeAttribute('class');
                 // turn light mode on, moon on
                 toggleSun.forEach(element => {
-                    element.style.display = 'block';
+                    element.style.display = 'none';
                 });
                 toggleMoon.forEach(element => {
-                    element.style.display = 'none';
+                    element.style.display = 'block';
                 });
             }
        }

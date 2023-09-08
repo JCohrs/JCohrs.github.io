@@ -48,6 +48,7 @@
 
 .work__project-description1 {
     font-size: var(--size-sm);
+    font-style: italic;
     color: var(--clr-text);
     margin: 1rem 0;
 }
